@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Joyeux anniversaire Antoine !!</title>
+    <meta name="description" content="Profite bien de tes 20 ans !!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/xp.css"
+>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+</head>
+<!-- 
+    ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+█████ █▀▄▄▀█ ██ █ ▄▄█ ██ █ █ ███ ▄▄▀█ ▄▄▀█ ▄▄▀██▄██▀███▀█ ▄▄█ ▄▄▀█ ▄▄█ ▄▄▀██▄██ ▄▄▀█ ▄▄
+█████ █ ██ █ ▀▀ █ ▄▄█ ██ █▀▄▀███ ▀▀ █ ██ █ ██ ██ ▄██ ▀ ██ ▄▄█ ▀▀▄█▄▄▀█ ▀▀ ██ ▄█ ▀▀▄█ ▄▄
+██ ▀▀ ██▄▄██▀▀▀▄█▄▄▄██▄▄▄█▄█▄███▄██▄█▄██▄█▄██▄█▄▄▄███▄███▄▄▄█▄█▄▄█▄▄▄█▄██▄█▄▄▄█▄█▄▄█▄▄▄
+▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+ _               _                                                          
+| \ _    | _    |_) _   __|_    _| _    _|_ _     _    | _  _     _| _    _ 
+|_/(/_   |(_|   |  (_| |  |_   (_|(/_    |_(_)|_|_>    |(/__>    (_|(/_\/_> 
+
+ -->
+<body class="h-screen flex flex-col blinking relative">
+    <div id="hidden" class="absolute h-10 w-10">
+    
+    </div>
+    <main class="flex-1 flex h-full flex-col justify-center">
+        <p class="text-5xl text-center">🎉</p>
+        <h1 class="text-center text-5xl font-robotomono font-black"><a class="hover:cursor-default" href="https://www.youtube.com/watch?v=HjXxvooa-0g">Joyeux anniversaire Antoine !!</a></h1>
+    </main>
+    <footer class="flex-none py-2">
+        <p class="text-xs text-center">&copy; 2023 - devs <a href="https://www.zetruc.fr" target="_blank" rel="noopener noreferrer">Zetruc</a></p>
+    </footer>
+    <dialog id="dialog" class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">T'as tout pété 😱</div>
+            <div class="title-bar-controls">
+              <button aria-label="Close"></button>
+            </div>
+          </div>
+          <div class="window-body">
+            <p>Erreur critique</p>
+            <p>Redémarrage</p>
+            <progress max="100" value="70"></progress>
+
+          </div>
+    </dialog>
+</body>
+<script>
+    let hidden = document.getElementById('hidden');
+    let dialog = document.getElementById('dialog');
+    hidden.addEventListener('click', function onOpen() {
+  if (typeof dialog.showModal === "function") {
+    dialog.showModal();
+  } else {
+    console.error("L'API <dialog> n'est pas prise en charge par ce navigateur.");
+  }
+});
+</script>
+</html>

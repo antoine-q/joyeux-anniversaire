@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.blinking{
+    -webkit-animation: joyeux-anniversaire 1s infinite; /* Safari 4+ */
+    -moz-animation:    joyeux-anniversaire 1s infinite; /* Fx 5+ */
+    -o-animation:      joyeux-anniversaire 1s infinite; /* Opera 12+ */
+    animation:         joyeux-anniversaire 1s infinite;
+}
+
+@keyframes joyeux-anniversaire {
+    0%, 49% {
+        background-color: tomato
+    }
+    50%, 100% {
+        background-color: yellow;
+    }
+}
